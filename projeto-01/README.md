@@ -1,7 +1,7 @@
 
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-01.png" width="100%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-01.png" width="100%"/>
 </div>
 
 &nbsp;
@@ -37,19 +37,19 @@ Esse arquivo contém todas as instruções SQL essenciais que permitem estrutura
 **Tabela SALES**
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-03.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-03.png" width="50%"/>
 </div>
 
 **Tabela MENU**
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-04.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-04.png" width="50%"/>
 </div>
 
 **Tabela MEMBERS**
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-05.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-05.png" width="50%"/>
 </div>
 
 ## Dicionário de Variáveis
@@ -73,7 +73,7 @@ Esse arquivo contém todas as instruções SQL essenciais que permitem estrutura
 &nbsp;
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-02.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-02.png" width="50%"/>
 </div>
 
 &nbsp;
@@ -91,7 +91,7 @@ Os scripts das análises podem ser encontrados no arquivo [**analise.sql**](http
 &nbsp;
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-06.png" width="60%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-06.png" width="60%"/>
 </div>
 
 **A partir da pergunta anterior, podemos ver a influência de cada cliente no faturamento**
@@ -101,7 +101,7 @@ Os scripts das análises podem ser encontrados no arquivo [**analise.sql**](http
 &nbsp;
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-07.png" width="80%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-07.png" width="80%"/>
 </div>
 
 &nbsp;
@@ -113,7 +113,7 @@ Os scripts das análises podem ser encontrados no arquivo [**analise.sql**](http
 &nbsp;
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-08.png" width="60%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-08.png" width="60%"/>
 </div>
 
 &nbsp;
@@ -125,7 +125,7 @@ Os scripts das análises podem ser encontrados no arquivo [**analise.sql**](http
 &nbsp;
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-09.png" width="70%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-09.png" width="70%"/>
 </div>
 
 &nbsp;
@@ -137,7 +137,7 @@ Os scripts das análises podem ser encontrados no arquivo [**analise.sql**](http
 &nbsp;
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-10.png" width="60%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-10.png" width="60%"/>
 </div>
 
 &nbsp;
@@ -149,7 +149,7 @@ Os scripts das análises podem ser encontrados no arquivo [**analise.sql**](http
 &nbsp;
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-11.png" width="70%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-11.png" width="70%"/>
 </div>
 
 &nbsp;
@@ -161,7 +161,7 @@ Os scripts das análises podem ser encontrados no arquivo [**analise.sql**](http
 &nbsp;
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-12.png" width="70%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-12.png" width="70%"/>
 </div>
 
 &nbsp;
@@ -173,7 +173,7 @@ Os scripts das análises podem ser encontrados no arquivo [**analise.sql**](http
 &nbsp;
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-13.png" width="70%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-13.png" width="70%"/>
 </div>
 
 &nbsp;
@@ -185,7 +185,7 @@ Os scripts das análises podem ser encontrados no arquivo [**analise.sql**](http
 &nbsp;
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-14.png" width="60%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-14.png" width="60%"/>
 </div>
 
 &nbsp;
@@ -197,7 +197,7 @@ Os scripts das análises podem ser encontrados no arquivo [**analise.sql**](http
 &nbsp;
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-20.png" width="70%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-20.png" width="70%"/>
 </div>
 
 * **Se cada $1 gasto equivale a 10 pontos e o sushi tem um multiplicador de pontos de 2x, quantos pontos cada cliente teria?**
@@ -208,7 +208,7 @@ Os scripts das análises podem ser encontrados no arquivo [**analise.sql**](http
 &nbsp;
 
 <div align='center'>
-<img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-15.png" width="60%"/>
+<img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-15.png" width="80%"/>
 </div>
 
 &nbsp;
@@ -220,7 +220,7 @@ Os scripts das análises podem ser encontrados no arquivo [**analise.sql**](http
 &nbsp;
 
 <div align='center'>
-<img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-16.png" width="70%"/>
+<img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-16.png" width="70%"/>
 </div>
 
 &nbsp;
@@ -237,7 +237,7 @@ Para organizar todas as informações de forma clara, vamos elaborar uma tabela 
 &nbsp;
 
 <div align='center'>
-<img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-18.png" width="70%"/>
+<img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-18.png" width="70%"/>
 </div>
 
 &nbsp;
@@ -249,5 +249,5 @@ Para enriquecer a análise, Danny precisa obter mais detalhes sobre como os clie
 &nbsp;
 
 <div align='center'>
-<img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/image/image-19.png" width="70%"/>
+<img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-01/images/image-19.png" width="70%"/>
 </div>
