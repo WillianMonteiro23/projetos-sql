@@ -1,0 +1,73 @@
+-- Database creation
+
+CREATE DATABASE SQL_CHALLENGE
+GO
+
+-- Changing master to SQL_CHALLENGE
+
+USE SQL_CHALLENGE
+GO
+
+-- Creating schema 
+CREATE SCHEMA DANNYS_DINNER
+AUTHORIZATION dbo
+GO
+
+-- Tables creation
+
+CREATE TABLE DANNYS_DINNER.SALES (
+  CUSTOMER_ID VARCHAR(1),
+  ORDER_DATE DATE,
+  PRODUCT_ID INT
+)
+GO
+
+CREATE TABLE DANNYS_DINNER.MENU (
+  PRODUCT_ID INTEGER,
+  PRODUCT_NAME VARCHAR(5),
+  PRICE INT
+)
+GO
+
+CREATE TABLE DANNYS_DINNER.MEMBERS (
+  CUSTOMER_ID VARCHAR(1),
+  JOIN_DATE DATE
+)
+GO
+
+-- Inserting data into tables
+
+INSERT INTO DANNYS_DINNER.SALES
+  (CUSTOMER_ID, ORDER_DATE, PRODUCT_ID)
+VALUES
+  ('A', '2021-01-01', '1'),
+  ('A', '2021-01-01', '2'),
+  ('A', '2021-01-07', '2'),
+  ('A', '2021-01-10', '3'),
+  ('A', '2021-01-11', '3'),
+  ('A', '2021-01-11', '3'),
+  ('B', '2021-01-01', '2'),
+  ('B', '2021-01-02', '2'),
+  ('B', '2021-01-04', '1'),
+  ('B', '2021-01-11', '1'),
+  ('B', '2021-01-16', '3'),
+  ('B', '2021-02-01', '3'),
+  ('C', '2021-01-01', '3'),
+  ('C', '2021-01-01', '3'),
+  ('C', '2021-01-07', '3')
+GO
+
+INSERT INTO DANNYS_DINNER.MENU
+  (PRODUCT_ID, PRODUCT_NAME, PRICE)
+VALUES
+  ('1', 'sushi', '10'),
+  ('2', 'curry', '15'),
+  ('3', 'ramen', '12')
+GO
+
+INSERT INTO DANNYS_DINNER.MEMBERS
+  (CUSTOMER_ID, JOIN_DATE)
+VALUES
+  ('A', '2021-01-07'),
+  ('B', '2021-01-09');
+GO
