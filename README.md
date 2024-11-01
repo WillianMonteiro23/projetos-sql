@@ -1,13 +1,15 @@
-<h2>📁 Projetos de Análise de Dados com SQL</h2>
-<p>Esta pasta apresenta uma série de projetos focados em análise de dados utilizando SQL. Cada projeto é uma oportunidade de explorar conjuntos de dados diversos, aplicando consultas SQL para extrair insights e transformar informações brutas em resultados práticos e compreensíveis.</p>
+## 📁 Projetos de Análise de Dados com SQL
 
-<p>Os projetos incluem:</p>
-<ul>
-    <li><strong>Análise Descritiva:</strong> Investigação de dados para identificar tendências, padrões e anomalias, proporcionando uma visão clara do comportamento dos dados.</li>
-    <li><strong>Consultas Avançadas:</strong> Desenvolvimento de consultas complexas que demonstram habilidades em junções, subconsultas e agregações para extrair informações significativas.</li>
-    <li><strong>Data Wrangling:</strong> Processamento e transformação de dados, garantindo que estejam prontos para análise, incluindo limpeza e formatação.</li>
-    <li><strong>Relatórios Visuais:</strong> Criação de dashboards e relatórios que ilustram insights de maneira clara e atraente, facilitando a tomada de decisão baseada em dados.</li>
-    <li><strong>Otimização de Desempenho:</strong> Implementação de práticas para melhorar a eficiência das consultas e a gestão do banco de dados, resultando em respostas mais rápidas e eficazes.</li>
-</ul>
+Esta pasta apresenta uma série de projetos focados em análise de dados com SQL, abordando desde o pré-processamento e tratamento de dados até a criação de insights práticos e acessíveis. Cada projeto é uma oportunidade de explorar conjuntos de dados diversos, aplicando consultas SQL para extrair valor e transformar dados brutos em informações úteis.
 
-<p>Esses projetos demonstram minha paixão por análise de dados e meu compromisso em utilizar SQL para gerar insights que possam impactar positivamente as decisões de negócios.</p>
+### Os projetos incluem:
+
+- **Pré-processamento e Tratamento de Dados:** Remoção de espaços indesejados, limpeza de caracteres que poluem os dados e ajuste de tipos de dados para garantir uma base confiável para análise.
+- **Importações e Exportações com SQL:** Importação de dados de arquivos CSV e outros formatos, além de exportação de bases tratadas para facilitar o uso em ferramentas como Power BI e Excel.
+- **Análise Descritiva:** Investigação de dados para identificar tendências, padrões e anomalias, proporcionando uma visão clara do comportamento dos dados.
+- **Consultas Avançadas:** Desenvolvimento de consultas complexas, incluindo junções, subconsultas e agregações para extrair informações significativas.
+- **Data Wrangling:** Processamento e transformação de dados, garantindo que estejam prontos para análise, incluindo limpeza e formatação.
+- **Relatórios Visuais:** Criação de dashboards e relatórios que ilustram insights de maneira clara e atraente, facilitando a tomada de decisão baseada em dados.
+- **Otimização de Desempenho:** Implementação de práticas para melhorar a eficiência das consultas e a gestão do banco de dados, resultando em respostas mais rápidas e eficazes.
+
+Esses projetos demonstram minha paixão por análise de dados e meu compromisso em utilizar SQL para gerar insights que possam impactar positivamente as decisões de negócios.
