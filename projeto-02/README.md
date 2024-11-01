@@ -4,7 +4,7 @@
 Este projeto tem como objetivo realizar o pré-processamento e tratamento de uma base de dados financeiros, com o foco em corrigir inconsistências e padronizar os dados para análises confiáveis e eficientes. A base foi importada de um arquivo CSV, processada e transformada no SQL Server para a remoção de caracteres indesejados, espaços extras e para ajustes nos tipos de dados. Em seguida, a base tratada foi exportada para um XLSX e também para um TXT além de ser integrada ao Power BI, potencializando o processo de obtenção de insights.
 
 ## Base de Dados
-A base de dados foi adquirida no [**Kaggle**](https://www.kaggle.com/datasets/atharvaarya25/financials) e pode ser observada a seguir [**Financials.csv**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-02/Financials.csv).
+Este é um conjunto de dados que requer muito pré-processamento com insights EDA incríveis para uma empresa. Um conjunto de dados que consiste em dados de vendas e lucros classificados por segmento de mercado e país/região .A base de dados foi adquirida no [**Kaggle**](https://www.kaggle.com) e pode ser observada a seguir [**Financials.csv**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-02/Financials.csv).
 
 ## Objetivos
 - **Limpeza de Dados**: Remover espaços e caracteres que poluem os dados e prejudicam a análise, assegurando a consistência das informações.
