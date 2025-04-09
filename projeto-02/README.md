@@ -4,7 +4,7 @@
 Este projeto tem como objetivo realizar o pré-processamento e tratamento de uma base de dados financeiros, com o foco em corrigir inconsistências e padronizar os dados para análises confiáveis e eficientes. A base foi importada de um arquivo CSV, processada e transformada no SQL Server para a remoção de caracteres indesejados, espaços extras e para ajustes nos tipos de dados. Em seguida, a base tratada foi exportada para um XLSX e também para um TXT além de ser integrada ao Power BI, potencializando o processo de obtenção de insights.
 
 ## Base de Dados
-Este é um conjunto de dados que requer muito pré-processamento com insights EDA incríveis para uma empresa. Um conjunto de dados que consiste em dados de vendas e lucros classificados por segmento de mercado e país/região .A base de dados foi adquirida no [**Kaggle**](https://www.kaggle.com) e pode ser observada a seguir [**Financials.csv**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-02/Financials.csv).
+Este é um conjunto de dados que requer muito pré-processamento com insights EDA incríveis para uma empresa. Um conjunto de dados que consiste em dados de vendas e lucros classificados por segmento de mercado e país/região. A base de dados foi adquirida no [**Kaggle**](https://www.kaggle.com) e pode ser observada a seguir [**Financials.csv**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-02/Financials.csv).
 
 ## Objetivos
 - **Limpeza de Dados**: Remover espaços e caracteres que poluem os dados e prejudicam a análise, assegurando a consistência das informações.
@@ -24,6 +24,8 @@ A preparação de dados é essencial para garantir a qualidade, precisão e cons
 2. **Limpeza de Dados**:
    - Remoção de espaços extras e caracteres indesejados.
    - Padronização de tipos de dados para adequação às exigências de análise financeira.
+   - O script para do Pré-processamento e Limpeza dos dados se localiza aqui[**PreProcessing_FinancialsData.sql**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-02/PreProcessing_FinancialsData.sql).
+   
 3. **Exportação e Integração**:
    - Exportação dos dados tratados para um arquivo **.xlsx** [**processed_financial_data.xlsx**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-02/processed_financial_data.xlsx) e também em arquivo **.txt** [**processed_financial_data.txt**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-02/processed_financial_data.txt).
    - Conexão direta da base ao Power BI para análises e visualizações detalhadas.
