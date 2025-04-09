@@ -25,8 +25,10 @@ Este é um conjunto de dados que requer processamento e limpeza de dados, ideal 
    - Padronização de tipos de dados.
    - Filtragem para obter dados limpos.
    - Condicionais para seleção de dados relevantes e combinação de colunas.
-   - O script para do Pré-processamento e Limpeza dos dados se localiza aqui[**PreProcessing_FinancialsData.sql**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-03/PreProcessing_DirtyCafeSales.sql).
-   - O arquivo ChangeLog se encontra aqui [**changelog.xlsx**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-03/changelog.xlsx).
+   - O script para do Pré-processamento e Limpeza dos dados com linguagem SQL se localiza aqui[**roadmap-limpeza-sql.md**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-03/roadmap-limpeza-sql.md) o script em SQL aqui [**PreProcessing_DirtyCafeSales.sql**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-03/PreProcessing_DirtyCafeSales.sql)
+   - O arquivo ChangeLog do tratamento em SQL se encontra aqui [**changelog_SQL.xlsx**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-03/changelog_SQL.xlsx).
+   - O arquivo tratado via Excel se encontra aqui [**dirty_cafe_sales.xlsx**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-03/dirty_cafe_sales.xlsx)
+   - O arquivo ChangeLog do tratamento em Excel se encontra aqui [**changelog.xlsx**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-03/changelog.xlsx).
 
 3. **Exportação e Integração**:
    - Exportação dos dados tratados para um arquivo **.xlsx** [**processed_financial_data.xlsx**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-03/dirty_cafe_sales.xlsx).
