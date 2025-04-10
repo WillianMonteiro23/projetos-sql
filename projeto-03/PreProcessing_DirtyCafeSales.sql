@@ -70,7 +70,7 @@ SELECT TOP 1000
 -- VAMOS OBSERVAR MAIS AFUNDO CADA UMA DAZ TABELAS
 
 -- A COLUNA [Transaction_Id] NÃO POSSUI INCONSISTÊNCIAS
-SELECT DISTINCT
+SELECT 
 	[Transaction_Id]
 	,COUNT(*) AS Quantity
 FROM 
@@ -80,7 +80,7 @@ GROUP BY
 
 -- TODAS AS DEMAIS COLUNAS TEM INCONSISTÊNCIAS ('ERROR','UNKNOWN',NULL)
 -- [Item] 
-SELECT DISTINCT
+SELECT
 	[Item]
 	,COUNT(*) AS Quantity
 FROM 
@@ -89,7 +89,7 @@ GROUP BY
 	[Item];
 
 -- [Quantity]
-SELECT DISTINCT
+SELECT
 	[Quantity]
 	,COUNT(*) AS Quantity
 FROM 
@@ -98,7 +98,7 @@ GROUP BY
 	[Quantity];
 
 -- [Price_Per_Unit]
-SELECT DISTINCT
+SELECT
 	[Price_Per_Unit]
 	,COUNT(*) AS Quantity
 FROM 
@@ -107,7 +107,7 @@ GROUP BY
 	[Price_Per_Unit];
 
 -- [Total_Spent]
-SELECT DISTINCT
+SELECT
 	[Total_Spent]
 	,COUNT(*) AS Quantity
 FROM 
@@ -116,7 +116,7 @@ GROUP BY
 	[Total_Spent];
 
 -- [Total_Spent]
-SELECT DISTINCT
+SELECT
 	[Payment_Method]
 	,COUNT(*) AS Quantity
 FROM 
@@ -125,7 +125,7 @@ GROUP BY
 	[Payment_Method];
 
 --[Location]
-SELECT DISTINCT
+SELECT
 	[Location]
 	,COUNT(*) AS Quantity
 FROM 
@@ -134,7 +134,7 @@ GROUP BY
 	[Location];
 
 -- [Transaction_Date]
-SELECT DISTINCT
+SELECT
 	[Transaction_Date]
 	,COUNT(*) AS Quantity
 FROM 
