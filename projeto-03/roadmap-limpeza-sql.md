@@ -143,6 +143,18 @@ FROM
 	[PREPARE_PROCESS_DB].[dbo].[DirtyCafeSales];
 ```
 
+### Por que criar uma cópia física ao invés de uma View?
+
+Ao trabalhar com uma base de dados problemática, como no caso da tabela `DirtyCafeSales`, a decisão de criar uma **cópia física** da tabela original foi essencial e adequada para o contexto.
+
+Diferente das *views*, que são geralmente utilizadas para operações **DML** (`SELECT`, `UPDATE`, `INSERT`) e não armazenam dados fisicamente, a cópia física (`SELECT INTO`) permite:
+
+- **Alterações estruturais reais** usando comandos **DDL**, como `ALTER TABLE`..
+- **Atualização dos tipos de dados**, o que foi necessário principalmente nas colunas de **datas** e **valores numéricos**, que estavam com tipos inconsistentes.
+- **Execução de transformações robustas**, preservando a tabela original, o que garante mais segurança no processo de limpeza e preparação.
+
+Em resumo, a cópia física da tabela viabilizou um ambiente de manipulação mais completo e flexível, permitindo realizar correções profundas nos dados e na estrutura da tabela — algo que **views não suportam** de forma plena.
+
 ## 10. Análise das Colunas e Possibilidades
 ### **TransactionID**
 A única coluna sem inconsistências foi ignorada nos tratamentos seguintes.
