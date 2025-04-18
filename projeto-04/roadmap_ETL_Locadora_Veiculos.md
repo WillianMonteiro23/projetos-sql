@@ -19,67 +19,67 @@ Como solução rápida, o arquivo Excel foi salvo em uma versão antiga (**Excel
 #### - Botão direito no banco desejado > Tasks > Import Data
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/1.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/1.png" width="70%"/>
 </div>
 
 #### - Clicar em Next
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/2.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/2.png" width="70%"/>
 </div>
 
 #### - Selecionar o DataSource para Excel > Buscar pelo `locacao_veiculos.xlsx` 
 #### - Apresenta um erro pois o SQL Server não consegue encontrar o **engine OLEDB.12**
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/3.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/3.png" width="70%"/>
 </div>
 
 #### - Abra o arquivo .xlsx e salve em **Excel 97-2003 (.xls)** > nomear como `locacao_veiculos_copy.xls`
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/4.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/4.png" width="70%"/>
 </div>
 
 #### - Execute os 3 primeiros passos mas agora selecione o arquivo `locacao_veiculos_copy.xls`
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/5.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/5.png" width="70%"/>
 </div>
 
 #### - Selecione como destino `SQL Server Native Client 11.0` > Autenticação Windows > LOCADORA_VEICULOS > Next
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/6.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/6.png" width="70%"/>
 </div>
 
 #### - Selecione a opção de copiar todos os dados da fonte > Next
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/7.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/7.png" width="70%"/>
 </div>
 
 #### - Selecione a tabela de interesse, `RASTREADOR$` nesse caso > Next
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/8.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/8.png" width="70%"/>
 </div>
 
 #### - Run Imediately, sem usar os pacotes do SSIS > Next
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/9.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/9.png" width="70%"/>
 </div>
 
 #### - Finish
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/10.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/10.png" width="70%"/>
 </div>
 
 #### - Os dados estão prontos para uso
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/11.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/11.png" width="70%"/>
 </div>
 
 #### - Refaça os mesmos passos para extrair a tabela `Planilha1$` de `clientes.xlsx`
