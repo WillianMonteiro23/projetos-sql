@@ -232,5 +232,5 @@ ON R.ID_CLIENTE = C.ID
 ```
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/image-12.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-04/images/12.png" width="50%"/>
 </div>
