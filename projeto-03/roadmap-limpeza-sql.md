@@ -1,7 +1,7 @@
 # Tratamento de Dados: Passo a Passo
 
 ## 1. Criação do Banco de Dados
-O primeiro passo foi criar e conecestar nesse banco de dados para receber a tabela com os dados a serem tratados.
+O primeiro passo foi criar e conectar nesse banco de dados para receber a tabela com os dados a serem tratados.
 
 ```
 CREATE DATABASE PREPARE_PROCESS_DB;
