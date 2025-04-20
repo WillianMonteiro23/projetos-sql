@@ -524,7 +524,7 @@ COMMIT TRAN
 # Comparativo de Resultados
 
 ### **Conjunto Original: `DirtyCafeSales`**
-| Coluna            | Total Registros | Inconsistências |
+| Coluna             | Total Registros | Inconsistências |
 |--------------------|-----------------|-----------------|
 | Transaction_Id     | 10.000          | 0               |
 | Item               | 10.000          | 969             |
@@ -537,6 +537,17 @@ COMMIT TRAN
 
 ### **Tratamento Agressivo**
 - Após a remoção de todas as inconsistências, sobraram apenas **3.089 registros** — abordagem muito destrutiva.
+
+| Coluna             | Total Registros | Inconsistências |
+|--------------------|-----------------|------------------|
+| Transaction_Id     | 3.089           | 0                |
+| Item               | 3.089           | 0                |
+| Quantity           | 3.089           | 0                |
+| Price_Per_Unit     | 3.089           | 0                |
+| Total_Spent        | 3.089           | 0                |
+| Payment_Method     | 3.089           | 0                |
+| Location           | 3.089           | 0                |
+| Transaction_Date   | 3.089           | 0                |
 
 ### **Conjunto Tratado: `DirtyCafeSalesCOPY`**
 | Coluna            | Total Registros | Inconsistências |
@@ -556,7 +567,7 @@ COMMIT TRAN
 A diferença é clara:
 - Reduzimos as inconsistências drasticamente, preservando ao máximo os registros úteis.
 - Ao invés de excluir registros de forma agressiva, utilizamos correlações e inferências para preencher dados ausentes.
-- Mantivemos apenas 178 linhas irrelevantes como excluídas, garantindo que o restante do conjunto permaneça rico em informações para análises futuras.
+- Apenas 178 linhas irrelevantes foram excluídas, garantindo que o restante do conjunto permaneça rico em informações para análises futuras. Diferente do método agressivo que removeu quase 7 mil registros.
 
 Mesmo com valores `NULL`, as colunas ainda oferecem dados relevantes para análise, como:
 - Total vendido.

@@ -173,6 +173,7 @@ EXEC sp_executesql @sql;
 
 -- TRATANDO INCONSISTÊNCIAS (MANEIRA AGRESSIVA)
 /* ------------------ERRADA------------------- */
+CREATE VIEW VW_ERROR_DIRTYCAFESALES AS
 SELECT *
 FROM [PREPARE_PROCESS_DB].[dbo].[DirtyCafeSales]
 WHERE NOT (
@@ -184,6 +185,30 @@ WHERE NOT (
 	[Location] IN ('ERROR', 'UNKNOWN') OR [Location] IS NULL OR
 	[Transaction_Date] IN ('ERROR', 'UNKNOWN') OR [Transaction_Date] IS NULL
 );
+
+
+-- PODEMOS OBSERVAR A QUANTIDADE DE INCONSISTENCIAS DENTRO DA TABELA ABAIXO
+DECLARE @tableName NVARCHAR(MAX) = 'VW_ERROR_DIRTYCAFESALES'; -- Nome da tabela
+DECLARE @schemaName NVARCHAR(MAX) = 'dbo'; -- Esquema da tabela
+DECLARE @sql NVARCHAR(MAX);
+
+SET @sql = '';
+
+-- Obter as colunas da tabela
+SELECT @sql = @sql + 
+    'SELECT ''' + COLUMN_NAME + ''' AS Coluna, ' +
+    'COUNT(*) AS Total, ' +
+    'SUM(CASE WHEN [' + COLUMN_NAME + '] IN (''ERROR'', ''UNKNOWN'') OR [' + COLUMN_NAME + 
+	'] IS NULL THEN 1 ELSE 0 END) AS Inconsistencias ' +
+    'FROM [' + @schemaName + '].[' + @tableName + '] UNION ALL '
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = @tableName AND TABLE_SCHEMA = @schemaName;
+
+-- Remover o último "UNION ALL"
+SET @sql = LEFT(@sql, LEN(@sql) - 10);
+
+-- Executar o script dinâmico
+EXEC sp_executesql @sql;
 
 -- CRIANDO TABELA CÓPIA
 SELECT
