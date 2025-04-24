@@ -129,26 +129,42 @@ FROM
 ORDER BY
 	Total_Sales_Value DESC
 
--- ABC POR PRODUTOS
-WITH Receita_Ordenada AS( -- TABELA TEMPORARIA PARA RECEBER DADOS ACUMULADOS
+
+-- CTE (Common Table Expression) para organizar os dados com receita total e acumulada
+WITH Receita_Ordenada AS (
 	SELECT
-		TB.Item_Name,
-		TB.Category,
-		SUM(CAST(TB.Total_Sales_Value AS FLOAT)) OVER () as Receita_Total_Geral, -- RECEITA TOTAL GERAL
-		SUM(CAST(TB.Total_Sales_Value AS FLOAT)) OVER (ORDER BY CAST(TB.Total_Sales_Value AS FLOAT) DESC) AS Receita_Acumulada -- RECEITA ACUMULADA ITEM A ITEM
+		TB.Item_Name,     -- Nome do item/produto
+		TB.Category,      -- Categoria do produto
+
+		-- Receita total geral da base (se repete em todas as linhas)
+		SUM(CAST(TB.Total_Sales_Value AS FLOAT)) OVER () AS Receita_Total_Geral,
+
+		-- Receita acumulada dos produtos ordenados do maior para o menor valor de vendas
+		SUM(CAST(TB.Total_Sales_Value AS FLOAT)) 
+			OVER (ORDER BY CAST(TB.Total_Sales_Value AS FLOAT) DESC) AS Receita_Acumulada
+
 	FROM 
-		[ABC_XYZ].[dbo].[abc_xyz_dataset] TB
+		[ABC_XYZ].[dbo].[abc_xyz_dataset] TB -- Fonte de dados com os produtos
 )
+
+-- Consulta final para calcular o percentual acumulado e classificar os itens em A, B ou C
 SELECT
-	*,
-	(Receita_Acumulada / Receita_Total_Geral) AS Percentual_Acumulado, -- CALCULANDO PERCENTUAL ACUMULADO
+	*, -- Traz todas as colunas da CTE
+
+	-- Calcula o percentual acumulado da receita de cada item
+	(Receita_Acumulada / Receita_Total_Geral) AS Percentual_Acumulado,
+
+	-- Classificação ABC com base no impacto acumulado no faturamento
 	CASE
-		WHEN (Receita_Acumulada / Receita_Total_Geral) <= 0.8 THEN 'A' -- CALCULANDO ITENS QUE GERAM ATÉ 80% DO FATURAMENTO
-		WHEN (Receita_Acumulada / Receita_Total_Geral) <= 0.95 THEN 'B' -- CALCULANDO ITENS QUE GERAM 15% DO FATURAMENTO
-		ELSE 'C' -- CALCULANDO OS ITENS QUE GERAM 5% DOS FATURAMENTO
+		WHEN (Receita_Acumulada / Receita_Total_Geral) <= 0.8 THEN 'A'  -- Top 80% da receita
+		WHEN (Receita_Acumulada / Receita_Total_Geral) <= 0.95 THEN 'B' -- Próximos 15%
+		ELSE 'C' -- Últimos 5%
 	END AS Classificacao_ABC
+
 FROM
-	Receita_Ordenada;
+	Receita_Ordenada; -- Usando os dados já ordenados e com somatórios calculados
+
+
 /* 20% DOS SEUS PRODUTOS CORRESPONDEM A 80% DO SEU FATURAMENTO, 30% DOS SEUS PRODUTOS CORRESPONDEM A 15% DO SEU FATURAMENTO,
 50% DOS SEUS PRODUTOS CORRESPONDEM A 5% DO SEU FATURAMENTO, VOCE DEVE TER TODOS, MAS EM UMA PROPORÇÃO EQUIVALENTE, PARA OTIMIZAR
 SEU ESTOQUE
