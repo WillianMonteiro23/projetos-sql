@@ -21,7 +21,7 @@ Este projeto visa estruturar um ambiente SQL para análise de dados de vendas, i
 - Renomeação e limpeza de tabelas
 - Análises estatísticas simples de faturamento e vendas
 - Análise ABC por grupo de produtos
-- **Conjunto dos Dados** [**vendas.xlsx**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-06/vendas.xlsx)
+- **Conjunto dos Dados** [**Vendas.xlsx**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-06/Vendas.xlsx)
 - **Script Completo SQL** [**analysis_MARKETX.sql**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-06/analysis_MARKETX.sql)
 - **Roadmap EDA** [**roadmap_EDA.md**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-06/roadmap_EDA.md)
 - **Roadmap Analysis** [**roadmap_ANALYSIS.md**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-06/roadmap_ANALYSIS.md)
@@ -78,3 +78,10 @@ EXEC sp_rename 'Planilha1$', 'Vendas';
 ### 6.  Análise ABC
 
 - Classificação dos grupos de produtos em A, B e C com base no faturamento acumulado.
+
+##  Observações
+
+- Devido a limitações do driver OLEDB do SQL Server, foi necessário converter os arquivos de Excel de .xlsx para .xls.
+ [**Vendas.xls**](https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-06/Vendas.xls)
+
+- As análises e validações são baseadas nos dados disponíveis no momento da importação.
