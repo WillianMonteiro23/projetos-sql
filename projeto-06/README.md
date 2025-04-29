@@ -75,6 +75,8 @@ EXEC sp_rename 'Planilha1$', 'Vendas';
 
 - Faturamento por equipe de vendas
 
+- Influência de cada equipe de vendas no faturamento
+
 ### 6.  Análise ABC
 
 - Classificação dos grupos de produtos em A, B e C com base no faturamento acumulado.

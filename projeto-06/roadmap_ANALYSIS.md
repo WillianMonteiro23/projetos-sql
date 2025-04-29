@@ -52,6 +52,26 @@ GROUP BY [Equipe Vendas]
 ORDER BY SUM(QtdItens * ValorUnitario) DESC;
 ```
 
+**Influência de cada equipe de vendas no faturamento**
+
+```
+WITH Influencia_Equipe AS (
+	SELECT DISTINCT
+		[Equipe Vendas],
+		SUM(QtdItens * ValorUnitario) OVER() AS Faturamento_Total,
+		SUM(QtdItens * ValorUnitario) OVER(PARTITION BY [Equipe Vendas]) AS Faturamento_Equipe
+	FROM
+		[MARKETX].[dbo].[Vendas]
+)
+SELECT
+	[Equipe Vendas],
+	(Faturamento_Equipe / Faturamento_Total) * 100 AS '%Faturamento'
+FROM
+	Influencia_Equipe
+ORDER BY
+	(Faturamento_Equipe / Faturamento_Total) * 100 DESC;
+```
+
 **Análise ABC de Produtos**
 
 ```

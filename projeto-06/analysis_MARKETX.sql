@@ -90,8 +90,6 @@ SELECT DISTINCT
 FROM
 	[MARKETX].[dbo].[Vendas];
 
-
-
 -- FATURAMENTO TOTAL
 SELECT
 	ROUND(SUM(QtdItens * ValorUnitario),2) AS [Faturamento Bruto]
@@ -121,16 +119,32 @@ FROM
 GROUP BY Vendedor
 ORDER BY SUM(QtdItens * ValorUnitario) DESC;
 
+
 -- FATURAMENTO POR EQUIPES DE VENDAS
 SELECT
 	[Equipe Vendas],
-	ROUND(SUM(QtdItens * ValorUnitario),2) AS [Faturamento Bruto] 
+	ROUND(SUM(QtdItens * ValorUnitario),2) AS [Faturamento Bruto]
 FROM
 	[MARKETX].[dbo].[Vendas]
 GROUP BY [Equipe Vendas]
 ORDER BY SUM(QtdItens * ValorUnitario) DESC;
 
-
+-- INFLUENCIA DE CADA EQUIPE NO FATURAMENTO
+WITH Influencia_Equipe AS (
+	SELECT DISTINCT
+		[Equipe Vendas],
+		SUM(QtdItens * ValorUnitario) OVER() AS Faturamento_Total,
+		SUM(QtdItens * ValorUnitario) OVER(PARTITION BY [Equipe Vendas]) AS Faturamento_Equipe
+	FROM
+		[MARKETX].[dbo].[Vendas]
+)
+SELECT
+	[Equipe Vendas],
+	(Faturamento_Equipe / Faturamento_Total) * 100 AS '%Faturamento'
+FROM
+	Influencia_Equipe
+ORDER BY
+	(Faturamento_Equipe / Faturamento_Total) * 100 DESC;
 
 -- ANALISE ABC POR GRUPO DE PRODUTOS
 WITH ReceitaPorGrupo AS (
