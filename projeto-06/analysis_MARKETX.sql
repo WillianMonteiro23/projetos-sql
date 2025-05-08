@@ -19,7 +19,11 @@ FROM
 
 EXEC sp_rename 'Planilha1$', 'Vendas';
 
-
+SELECT DISTINCT
+	DataEmissao
+FROM	
+	[MARKETX].[dbo].[Vendas]
+ORDER BY DataEmissao
 SELECT TOP 10 
 	* 
 FROM 
@@ -89,6 +93,7 @@ SELECT DISTINCT
 	[Equipe Vendas]
 FROM
 	[MARKETX].[dbo].[Vendas];
+
 
 -- FATURAMENTO TOTAL
 SELECT
