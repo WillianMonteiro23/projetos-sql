@@ -63,7 +63,7 @@ A modelagem de dados seguiu o **modelo estrela**, com foco em desempenho analít
 Os dados foram organizados em tabelas relacionais para melhor entendimento e consistência nas análises.
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-07/data_model.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-07/data_model.png" width="100%"/>
 </div>
 
 
