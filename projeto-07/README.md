@@ -25,7 +25,7 @@ Este conjunto de dados contém informações sobre **100 mil pedidos realizados 
 Este projeto segue todas as etapas do processo de Business Intelligence:
 
 ### 1. Extração
-- Dados extraídos do Kaggle em formato `.csv`. 
+- Dados extraídos do Kaggle em formato `.csv`. Acesse para obter os dados [**datasets**](https://github.com/WillianMonteiro23/projetos-sql/tree/main/projeto-07/datasets) 
 
 ### 2. Transformação 
 - Importação dos arquivos via `Import Flat File` para o SQL Server.
@@ -42,7 +42,11 @@ Este projeto segue todas as etapas do processo de Business Intelligence:
 
 ## Modelagem e Visualização
 
-A modelagem de dados seguiu o **modelo estrela**, com foco em desempenho analítico e clareza para construção dos dashboards no Power BI, extraímos views do SQLServer que continham as tabelas dimensões e a tabela fato. [**starschema.png**](https://github.com/WillianMonteiro23/projetos-sql/blob/master/projeto-07/starschema.png)
+A modelagem de dados seguiu o **modelo estrela**, com foco em desempenho analítico e clareza para construção dos dashboards no Power BI, extraímos views do SQLServer que continham as tabelas dimensões e a tabela fato. 
+
+<div align='center'>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-07/starschema.png" width="50%"/>
+</div>
 
 ### Principais Análises Desenvolvidas:
 
@@ -59,7 +63,7 @@ A modelagem de dados seguiu o **modelo estrela**, com foco em desempenho analít
 Os dados foram organizados em tabelas relacionais para melhor entendimento e consistência nas análises.
 
 <div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/master/projeto-07/data_model.png" width="50%"/>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-07/data_model.png" width="50%"/>
 </div>
 
 
