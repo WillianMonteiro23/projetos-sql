@@ -27,6 +27,15 @@ Este projeto segue todas as etapas do processo de Business Intelligence:
 ### 1. Extração
 - Dados extraídos do Kaggle em formato `.csv`. Acesse para obter os dados [**datasets**](https://github.com/WillianMonteiro23/projetos-sql/tree/main/projeto-07/datasets) 
 
+### Esquema de Dados
+
+Os dados foram organizados em tabelas relacionais para melhor entendimento e consistência nas análises.
+
+<div align='center'>
+  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-07/data_model.png" width="100%"/>
+</div>
+
+
 ### 2. Transformação 
 - Importação dos arquivos via `Import Flat File` para o SQL Server.
 - Script das etapas abaixo : [**DataProfiling_OLIST.sql**](https://github.com/WillianMonteiro23/projetos-sql/blob/master/projeto-07/DataProfiling_OLIST.sql)
@@ -57,13 +66,5 @@ A modelagem de dados seguiu o **modelo estrela**, com foco em desempenho analít
 - 🧠 **Correlação de variáveis** para investigar a satisfação do cliente
 - 📆 Evolução dos indicadores ao longo dos anos: **2016, 2017 e 2018**
 
-
-## Esquema de Dados
-
-Os dados foram organizados em tabelas relacionais para melhor entendimento e consistência nas análises.
-
-<div align='center'>
-  <img src="https://github.com/WillianMonteiro23/projetos-sql/blob/main/projeto-07/data_model.png" width="100%"/>
-</div>
 
 
