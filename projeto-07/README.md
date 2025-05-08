@@ -11,7 +11,6 @@ Este conjunto de dados contém informações sobre **100 mil pedidos realizados 
 - Formato original: `.csv`
 - Período abrangido: **2016 a 2018**
 
-
 ## Tecnologias Utilizadas
 
 - **SQL Server** — para carga, limpeza e modelagem dos dados
@@ -59,7 +58,7 @@ A modelagem de dados seguiu o **modelo estrela**, com foco em desempenho analít
 
 ### Principais Análises Desenvolvidas:
 
-- As análises podem ser vistas no arquivo [**DashOlistEcommerce.pbix**](https://github.com/WillianMonteiro23/projetos-sql/blob/master/projeto-07/DashOlistEcommerce.pbix)
+- As análises podem ser vistas no arquivo [**DashOlistEcommerce.pbix**](https://github.com/WillianMonteiro23/projetos-sql/blob/master/projeto-07/DashOlistEcommerce.pbix) ou acessando [Portfólio - Willian Monteiro](https://sites.google.com/view/willian-monteiro-portflio/projetos-power-bi/%C3%A1rea-comercial)
 - 📈 **KPIs principais**: Faturamento Total, Ticket Médio, Volume de Vendas, Média de Satisfação do Cliente, Percentual de Entregas Antes do Prazo e Média de Dias entre Compra e Entrega dos Produtos.
 - 🧮 **Classificação ABC** de produtos e clientes
 - 🎯 **Análise de Pareto (80/20)** aplicada às vendas e faturamento
