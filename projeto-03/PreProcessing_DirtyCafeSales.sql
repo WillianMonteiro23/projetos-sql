@@ -210,6 +210,7 @@ SET @sql = LEFT(@sql, LEN(@sql) - 10);
 -- Executar o script dinâmico
 EXEC sp_executesql @sql;
 
+-- TRATANDO INCONSISTÊNCIAS (MANEIRA MENOS AGRESSIVA)
 -- CRIANDO TABELA CÓPIA
 SELECT
 	*
